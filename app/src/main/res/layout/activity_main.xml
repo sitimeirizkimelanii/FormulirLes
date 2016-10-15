@@ -1,16 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+        android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+        android:weightSum="1"
     tools:context="id.sch.smktelkom_mlg.tugas01.xiirpl3034.formulirles.MainActivity">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="118dp"
+            android:layout_height="111dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_logo" />
+
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_gravity="center_horizontal"
+        android:text="Nama" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelas" />
+
+        <Spinner
+            android:id="@+id/spinnerKelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/kelas" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenjang" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupJenjang"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.07">
+
+            <RadioButton
+                android:id="@+id/radioButtonSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SD" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSMP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMP" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSMA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMA" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hari" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSenin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senin" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rabu" />
+
+        <CheckBox
+            android:id="@+id/checkBoxJumat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumat" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/textViewHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewHasil1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewPilihH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil" />
+
+        <TextView
+            android:id="@+id/textViewHari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hasil" />
+
+
+    </LinearLayout>
+</ScrollView>
